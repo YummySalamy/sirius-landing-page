@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SiriusLogo from '/sirius-logo-dark.png';
 import './styles/Headers.css';
@@ -23,6 +23,12 @@ const navLinks = [
 ];
 
 const MainHeader = () => {
+    const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+    useEffect(() => {
+        setCurrentPath(window.location.pathname);
+    }, [currentPath]);
+
     return (
         <div className="main-header">
             <div className="logo">
@@ -31,7 +37,7 @@ const MainHeader = () => {
             <nav className="nav">
                 <ul className="nav-list">
                     {navLinks.map((link, index) => (
-                        <li key={index} className="nav-item">
+                        <li key={index} className={`nav-item ${currentPath === link.href ? 'active' : ''}`}>
                             <Link to={link.href} className="nav-link">{link.title}</Link>
                         </li>
                     ))}

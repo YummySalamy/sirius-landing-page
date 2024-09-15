@@ -13,6 +13,14 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.active {
+    color: #5da6ce;
+}
+
+.active a {
+    color: #690097;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;

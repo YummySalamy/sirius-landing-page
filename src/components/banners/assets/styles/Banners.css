@@ -1,5 +1,4 @@
-/* assets/styles/Banners.css */
-
+/* TwoColumns Banner styles */
 .two-columns-banner {
     display: flex;
     flex-direction: row;
@@ -62,7 +61,116 @@
     box-shadow: 0 4px 15px #5da6ce;
 }
 
-/* Responsive Design */
+/* Three Services styles */
+
+.three-services {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    color: #195aec;
+    margin-bottom: 40px;
+}
+
+.services-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(93, 167, 220, 0.4);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px #195a;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-cta {
+    text-decoration: none;
+}
+
+.cta-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #195aec;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0d3bbd;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .services-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .services-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-title {
+        font-size: 1.5rem;
+    }
+
+    .cta-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .two-columns-banner {
         flex-direction: column;

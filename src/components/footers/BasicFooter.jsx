@@ -26,9 +26,9 @@ const BasicFooter = () => {
                 <div className="footer-column">
                     <ul>
                     <li><FaFacebook/> Facebook</li>
-                    <li><FaLinkedin/> LinkedIn</li>
+                    <li onClick={()=> {window.open('https://www.linkedin.com/company/siriusco/', '_blank')}}><FaLinkedin/> LinkedIn</li>
                     <li><FaYoutube/> YouTube</li>
-                    <li><FaInstagram/> Instagram</li>
+                    <li onClick={()=> {window.open('https://www.instagram.com/sirius.ofi/?hl=en', '_blank')}}><FaInstagram/> Instagram</li>
                     </ul>
                 </div>
                 {/* <div className="footer-column">
