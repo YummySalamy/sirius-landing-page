@@ -1,0 +1,26 @@
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 1s ease;
+}
+
+.not-found h1 {
+    font-size: 2.3rem;
+}
+
+.not-found-face {
+    margin: 0;
+    transform: rotate(70deg);
+    filter: drop-shadow(0 0 0.45rem #76dbf7);
+}
