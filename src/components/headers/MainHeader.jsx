@@ -32,7 +32,9 @@ const MainHeader = () => {
     return (
         <div className="main-header">
             <div className="logo">
-                <img src={SiriusLogo} alt="Sirius Logo" />
+                <Link to="/">
+                    <img src={SiriusLogo} alt="Sirius Logo" />
+                </Link>
             </div>
             <nav className="nav">
                 <ul className="nav-list">
