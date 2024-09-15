@@ -40,7 +40,7 @@ const ThreeServices = () => {
                             <p>{service.description}</p>
                             <Link to={service.link} className="card-cta">
                                 <button className="cta-btn">
-                                    Learn More
+                                    Dive In
                                 </button>
                             </Link>
                         </Card>
