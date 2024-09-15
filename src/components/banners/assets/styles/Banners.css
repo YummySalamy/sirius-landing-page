@@ -140,6 +140,88 @@
     transform: scale(1.05);
 }
 
+/* About Us Banner styles */
+.about-us-banner {
+    background: linear-gradient(135deg, #f7f7f7, #e3e3e3);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* margin: 40px 0; */
+}
+
+.about-us-banner-content {
+    max-width: 800px;
+}
+
+.about-us-banner-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us-banner-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.about-us-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-us-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.about-us-icon:hover {
+    color: #6a42c8;
+}
+
+.about-us-icon svg {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-us-icon p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about-us-banner {
+        padding: 30px 15px;
+    }
+
+    .about-us-banner-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-us-icons {
+        gap: 30px;
+    }
+
+    .about-us-icon svg {
+        font-size: 2rem;
+    }
+
+    .about-us-icon p {
+        font-size: 1rem;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .services-cards {
         grid-template-columns: repeat(2, 1fr);
