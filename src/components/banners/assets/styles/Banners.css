@@ -199,6 +199,26 @@
     margin: 0;
 }
 
+.video-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #333;
+}
+
+.video-banner iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(93, 167, 220, 0.4);
+    }
+}
+
 @media (max-width: 768px) {
     .about-us-banner {
         padding: 30px 15px;
